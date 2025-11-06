@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TCS NQT — Advanced Mock Test (40 Q)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>TCS NQT — Advanced Mock Test</h1>
+    </header>
+
+    <main class="main">
+      <div id="start-screen" class="card center">
+        <h2>Total Questions: <strong>40</strong></h2>
+        <p>Duration: <strong>40 minutes</strong></p>
+
+        <button id="start-btn" class="btn primary">Start Test</button>
+      </div>
+
+      <section id="test-screen" class="card hidden">
+        <div class="topbar">
+          <div id="timer" class="timer">40:00</div>
+          <div id="qprogress" class="progress">Q <span id="cur">0</span> / <span id="total">40</span></div>
+        </div>
+
+        <div id="topic" class="topic">Topic</div>
+        <div id="question-area" class="question-area">
+          <div id="question" class="question-text"></div>
+          <div id="options" class="options-grid"></div>
+        </div>
+
+        <div id="feedback" class="feedback"></div>
+
+        <div class="controls">
+          <button id="next-btn" class="btn" disabled>Next ➜</button>
+        </div>
+      </section>
+
+      <section id="result-screen" class="card hidden">
+        <h2>Test Completed</h2>
+        <p id="final-score"></p>
+        <div id="breakdown" class="breakdown"></div>
+        <div class="controls">
+          <button id="restart-btn" class="btn">Restart (local)</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Prepared for TCS NQT practice — do not change system time while testing.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
